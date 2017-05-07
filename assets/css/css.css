@@ -1,0 +1,31 @@
+
+/*Homepage
+
+.particles-js {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.particles-js .overlay {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -100;
+    background: green;
+    opacity: 1;
+
+}
+
+
+.particles-js video {
+    min-width: 100%;
+    min-height: 100%;
+    position: relative;
+    z-index: 1;
+    
+}
+*/

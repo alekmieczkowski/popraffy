@@ -1,0 +1,9 @@
+/* Menu */
+
+div#menu.style {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 70px;
+}

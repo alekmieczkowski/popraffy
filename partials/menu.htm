@@ -1,0 +1,41 @@
+<!--Seperate Menu-->
+<link rel="stylesheet" type="text/css" href="{{ 'assets/css/menu.css'| theme }}">
+
+
+<div class="row">
+	<div class="menu">
+		<div class="col-md-1 col-md-offset-3" >
+			<img class="menu-item"  src="{{ 'assets/images/menu/home-before.png'| theme }}"/>
+		</div>
+	</div>
+</div>
+
+<style>
+
+
+.menu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 200px;
+}
+
+.menu-item{
+	height:150px;
+	width:150px;
+	opacity:.8;
+	-webkit-transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -ms-transition: opacity .5s ease-in-out;
+    -o-transition: opacity .5s ease-in-out;
+    transition: opacity .5s ease-in-out;
+
+}
+
+.menu-item:hover{
+	opacity:1;
+}
+
+
+</style>
