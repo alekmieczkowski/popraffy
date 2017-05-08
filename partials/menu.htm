@@ -5,7 +5,10 @@
 <div class="row">
 	<div class="menu">
 		<div class="col-md-1 col-md-offset-3" >
-			<img class="menu-item"  src="{{ 'assets/images/menu/home-before.png'| theme }}"/>
+			<img class="menu-item"  src="{{ 'assets/images/menu/home-2.gif'| theme }}"/>
+		</div>
+		<div class="col-md-1" >
+			<img class="menu-item"  src="{{ 'assets/images/menu/home-3.gif'| theme }}"/>
 		</div>
 	</div>
 </div>
@@ -18,13 +21,13 @@
     bottom: 0;
     left: 0;
     right: 0;
-    margin-bottom: 200px;
+    margin-bottom: 150px;
 }
 
 .menu-item{
 	height:150px;
 	width:150px;
-	opacity:.8;
+	opacity:.6;
 	-webkit-transition: opacity .5s ease-in-out;
     -moz-transition: opacity .5s ease-in-out;
     -ms-transition: opacity .5s ease-in-out;
@@ -35,6 +38,16 @@
 
 .menu-item:hover{
 	opacity:1;
+}
+
+.shadowfilter {
+	-webkit-filter: drop-shadow(0px 0px 0px rgba(255,255,255,0.80));
+	-webkit-transition: all 0.5s linear;
+	-o-transition: all 0.5s linear;
+	transition: all 0.5s linear;
+	
+}.shadowfilter:hover {
+	-webkit-filter: drop-shadow(0px 0px 8px rgba(0, 231, 255, 0.8));
 }
 
 
