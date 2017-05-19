@@ -23,7 +23,15 @@ description = "Home"
 		<source src="{{ 'assets/vid/vid-bg-dark.mp4'|theme }}" type="video/mp4">
 	</video>
 
+<div id="social-links">
+      <img class="social-link" src="{{ 'assets/images/social-icons/soundcloud.png'| theme }}"/>
+      <img class="social-link" src="{{ 'assets/images/social-icons/facebook.png'| theme }}"/>
+      <img class="social-link" src="{{ 'assets/images/social-icons/instagram.png'| theme }}"/>
+      <img class="social-link" src="{{ 'assets/images/social-icons/snapchat.png'| theme }}"/>
+      <img class="social-link" src="{{ 'assets/images/social-icons/twitter.png'| theme }}"/>
+      <img class="social-link" src="{{ 'assets/images/social-icons/youtube.png'| theme }}"/>
 
+</div>
 
 <!--Homescreen-->
 <div id="home">
@@ -154,6 +162,36 @@ particlesJS("particles-js",
 </script>
 
 <style>
+
+
+.social-link{
+  opacity:.4;
+  height:20px;
+  margin-top:5px;
+  -webkit-transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -ms-transition: opacity .5s ease-in-out;
+  -o-transition: opacity .5s ease-in-out;
+  transition: opacity .5s ease-in-out;
+}
+
+.social-link:hover{
+  opacity:1;
+}
+
+
+#social-links{
+  position:fixed;
+  top:0;
+  right:0;
+  margin-right:20%;
+  margin-top:5%;
+  border: 2px white;
+  border-style: solid none;
+  height: 40px;
+
+}
+
 #home{
   position: fixed;
   top:0;
