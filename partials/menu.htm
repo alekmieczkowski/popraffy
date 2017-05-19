@@ -4,12 +4,27 @@
 
 <div class="row">
 	<div class="menu">
-		<div class="col-md-1 col-md-offset-3" >
-			<img class="menu-item"  src="{{ 'assets/images/menu/home-2.gif'| theme }}"/>
+
+		<!--Home Icon-->
+		<div class="col-md-1 col-sm-offset-4" >
+			<img class="menu-item shadowfilter" id="home-icon" src="{{ 'assets/images/menu/home.png'| theme }}"/>
 		</div>
+
+		<!--My Story Icon-->
 		<div class="col-md-1" >
-			<img class="menu-item"  src="{{ 'assets/images/menu/home-3.gif'| theme }}"/>
+			<img class="menu-item shadowfilter"  id="my-story" src="{{ 'assets/images/menu/my-story.png'| theme }}"/>
 		</div>
+
+		<!--Soundcloud Icon-->
+		<div class="col-md-1" >
+			<img class="menu-item shadowfilter"  id="soundcloud" src="{{ 'assets/images/menu/soundcloud.png'| theme }}"/>
+		</div>
+
+		<!--Store Icon-->
+		<div class="col-md-1" >
+			<img class="menu-item shadowfilter"  id="store" src="{{ 'assets/images/menu/store.png'| theme }}"/>
+		</div>
+
 	</div>
 </div>
 
@@ -46,9 +61,24 @@
 	-o-transition: all 0.5s linear;
 	transition: all 0.5s linear;
 	
-}.shadowfilter:hover {
+}.shadowfilter#my-story:hover {
 	-webkit-filter: drop-shadow(0px 0px 8px rgba(0, 231, 255, 0.8));
 }
+
+.shadowfilter#home-icon:hover {
+	-webkit-filter: drop-shadow(0px 0px 8px rgba(201, 133, 185, 0.8));
+}
+
+.shadowfilter#soundcloud:hover {
+	-webkit-filter: drop-shadow(0px 0px 8px rgba(251, 173, 24, 0.8));
+}
+
+.shadowfilter#store:hover {
+	-webkit-filter: drop-shadow(0px 0px 8px rgba(0, 255, 30, 0.8));
+}
+
+
+
 
 
 </style>
