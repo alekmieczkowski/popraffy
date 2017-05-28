@@ -23,10 +23,11 @@ description = "Home"
 		<source src="{{ 'assets/vid/vid-bg-dark.mp4'|theme }}" type="video/mp4">
 	</video>
 
+<!--Social Media tags-->
 <div id="social-links">
+      <img class="social-link" src="{{ 'assets/images/social-icons/instagram.png'| theme }}"/>
       <img class="social-link" src="{{ 'assets/images/social-icons/soundcloud.png'| theme }}"/>
       <img class="social-link" src="{{ 'assets/images/social-icons/facebook.png'| theme }}"/>
-      <img class="social-link" src="{{ 'assets/images/social-icons/instagram.png'| theme }}"/>
       <img class="social-link" src="{{ 'assets/images/social-icons/snapchat.png'| theme }}"/>
       <img class="social-link" src="{{ 'assets/images/social-icons/twitter.png'| theme }}"/>
       <img class="social-link" src="{{ 'assets/images/social-icons/youtube.png'| theme }}"/>
@@ -38,9 +39,17 @@ description = "Home"
 	{% partial "homepage" %}
 </div>
 
+<!--menu-->
 <div id="menu" class="info">
-	{% partial "menu" %}
+  {% partial "menu" %}
 </div>
+
+
+<!--menu v2-->
+<div id="menu-2">
+   {% partial "menu-2" %}
+</div>
+
 
 <script>
 
@@ -163,11 +172,19 @@ particlesJS("particles-js",
 
 <style>
 
+#menu-2{
+ left:0;
+ top:0;
+ margin-top:50px;
+ z-index:-100;
+}
 
 .social-link{
-  opacity:.4;
+  opacity:.6;
   height:20px;
+    margin:2px;
   margin-top:5px;
+
   -webkit-transition: opacity .5s ease-in-out;
   -moz-transition: opacity .5s ease-in-out;
   -ms-transition: opacity .5s ease-in-out;
@@ -181,13 +198,15 @@ particlesJS("particles-js",
 
 
 #social-links{
+  opacity:.6;
   position:fixed;
   top:0;
   right:0;
   margin-right:20%;
-  margin-top:5%;
+  margin-top:-2px;
   border: 2px white;
-  border-style: solid none;
+  border-style: solid solid;
+  border-radius: 0px 0px 15px 15px;
   height: 40px;
 
 }
