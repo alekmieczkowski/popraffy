@@ -11,13 +11,24 @@
 	<script src="{{ 'assets/javascript/bootstrap.min.js'|theme }}"></script>
 	<script src="{{ 'assets/javascript/blocs.min.js'|theme }}"></script>
 	<script src="{{ 'assets/javascript/particles.js'|theme }}"></script>
-	
-	
+	<!--page transitions-->
+	<script src="{{ 'assets/javascript/pagetransitions.js'|theme }}"></script>
+	<script src="{{ 'assets/javascript/modernizr.custom.js'|theme }}"></script>
+	<!--menu selection-->
+	<script src="{{ 'assets/javascript/menu-selection.js'|theme }}"></script>
+
 	<link rel="stylesheet" type="text/css" href="{{ 'assets/css/bootstrap.min.css'|theme }}">
 	<link rel="stylesheet" type="text/css" href="{{ 'assets/style.css'|theme }}">
 	<link rel="stylesheet" type="text/css" href="{{ 'assets/css/font-awesome.min.css'|theme }}">
 	<link rel="stylesheet" type="text/css" href="{{ 'assets/css/css.css'|theme }}">
-	
+
+	<!--page transitions-->
+	<link rel="stylesheet" type="text/css" href="{{ 'assets/css/pagetransitions/animations.css'|theme }}">
+	<link rel="stylesheet" type="text/css" href="{{ 'assets/css/pagetransitions/component.css'|theme }}">
+
+	{% framework extra %}
+	{% framework %}
+	{% scripts %}
 
 	<title>{{ this.page.title }}</title>
 
