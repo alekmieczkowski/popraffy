@@ -1,3 +1,11 @@
+layout = "menu"
+==
+function onInit()
+{
+$this->addJs('assets/javascript/menu-selection.js');
+}
+==
+
 <div class="menu-2" onload="default_active()">
 
 	<!--Home Icon-->
@@ -16,6 +24,7 @@
 
 </div>
 
+<!--
 <script>
 
 //collect id from clicked menu item
@@ -85,6 +94,8 @@ function remove_active(item){
 	}
 }
 </script>
+-->
+
 
 <style>
 .menu-2 {

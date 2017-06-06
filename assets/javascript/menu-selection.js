@@ -1,8 +1,14 @@
 
 //collect id from clicked menu item
+
 $('img').click(function(){
-   set_active(this.id);
+  set_active(this.id);
 });
+
+
+//$('img').click(function(){
+//	   set_active(this.id);
+//	});
 
 //set correct selecting on menu items
 function set_active(new_active_id){
