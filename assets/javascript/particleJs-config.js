@@ -1,57 +1,3 @@
-title = "Home"
-url = "/"
-layout = "default"
-description = "Home"
-
-==
-
-
-
-
-
-<!--Waves
-<canvas id="gradient"></canvas>
-<script src="{{ 'assets/javascript/waves.js'|theme }}"></script>
-
--->
-
-<!--ParticleJS-->
-<div id="particles-js" ></div>
-
-  <!--Video Background-->
-	<video loop muted autoplay playsinline poster="{{ 'assets/images/vid-bg-placeholder.tif'|theme }}">
-		<source src="{{ 'assets/vid/vid-bg-dark.mp4'|theme }}" type="video/mp4">
-	</video>
-
-<!--Social Media tags-->
-<div id="social-links">
-      <img class="social-link" src="{{ 'assets/images/social-icons/instagram.png'| theme }}"/>
-      <img class="social-link" src="{{ 'assets/images/social-icons/soundcloud.png'| theme }}"/>
-      <img class="social-link" src="{{ 'assets/images/social-icons/facebook.png'| theme }}"/>
-      <img class="social-link" src="{{ 'assets/images/social-icons/snapchat.png'| theme }}"/>
-      <img class="social-link" src="{{ 'assets/images/social-icons/twitter.png'| theme }}"/>
-      <img class="social-link" src="{{ 'assets/images/social-icons/youtube.png'| theme }}"/>
-
-</div>
-
-<!--Homescreen-->
-<div id="home">
-   {% partial 'homepage' %}
-</div>
-
-<!--menu v2-->
-<div id="menu-2">
-   {% partial "menu-2" %}
-</div>
-
-
-<script>
-//check what type of animation depending on which menu item is chosen
-
-
-
-
-
 //Particle js settings
 particlesJS("particles-js",
 
@@ -166,9 +112,3 @@ particlesJS("particles-js",
   "retina_detect": true
 
 });
-</script>
-
-<style>
-
-
-</style>

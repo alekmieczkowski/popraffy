@@ -14,8 +14,8 @@
 	<!--page transitions-->
 	<script src="{{ 'assets/javascript/pagetransitions.js'|theme }}"></script>
 	<script src="{{ 'assets/javascript/modernizr.custom.js'|theme }}"></script>
-	<!--menu selection-->
-	<script src="{{ 'assets/javascript/menu-selection.js'|theme }}"></script>
+	<!--particleJS config-->
+	<script src="{{ 'assets/javascript/particleJs-config.js'|theme }}"></script>
 
 	<link rel="stylesheet" type="text/css" href="{{ 'assets/css/bootstrap.min.css'|theme }}">
 	<link rel="stylesheet" type="text/css" href="{{ 'assets/style.css'|theme }}">
@@ -25,18 +25,14 @@
 	<!--page transitions-->
 	<link rel="stylesheet" type="text/css" href="{{ 'assets/css/pagetransitions/animations.css'|theme }}">
 	<link rel="stylesheet" type="text/css" href="{{ 'assets/css/pagetransitions/component.css'|theme }}">
-
 	
+	{%styles%}
 
 	<title>{{ this.page.title }}</title>
 
-	
-<!-- Google Analytics -->
- 
-<!-- Google Analytics END -->
-
 </head>
 <body style="height:100vh;overflow:hidden!important">
+
 <!-- Main container -->
 
      {% page %}
@@ -46,6 +42,5 @@
 {% framework extra %}
 	{% framework %}
 	{% scripts %}
-	{%styles%}
 </body>
 </html>
