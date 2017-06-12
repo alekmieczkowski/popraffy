@@ -22,6 +22,15 @@ function onStart()
 	</div>
 	<!--Twitter Feed-->
 	<div class="col-sm-4">
+		<!--Twitter Header-->
+		<div class="row">
+			<div class="col-sm-4 col-md-2">
+				<img class="twitter-header-image" src="{{ 'assets/images/social-icons/twitter.png' | theme}}"/>
+			</div>
+			<div class="col-sm-6 col-md-6">
+				<h2 class="twitter-header-text">Twitter </h2>
+			</div>
+		</div>
 		<hr id="tweet-divider">
 		{% component 'latestTweet' %}
 	</div>
