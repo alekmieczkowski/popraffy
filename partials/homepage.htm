@@ -1,5 +1,26 @@
+
+[latestTweet]
+==
+<?php
+function onStart()
+{
+    $this->addCss('assets/css/twitter_timeline.css');
+}
+?>
+==
+<!--Pop Raffy Header-->
 <div class="row" style="margin-top:10%">
 	<div class="col-sm-4 col-sm-offset-4 raffy-logo">
 		<img  class="img-responsive" src="{{ 'assets/images/pop-raffy-animated.gif' | theme}}"/>
+	</div>
+</div>
+
+<div class="row">
+	<!--Twitter Feed-->
+	<div class="col-md-4">
+		<hr id="tweet-divider">
+		<a class="twitter-text">
+			{% component 'latestTweet' %}
+		</a>
 	</div>
 </div>
