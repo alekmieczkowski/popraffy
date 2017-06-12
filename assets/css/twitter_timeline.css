@@ -2,10 +2,19 @@
 
 /*divider*/
 #tweet-divider{
+	margin-top:10px;
 	height:2px;
 	color:#ffffff;
 }
 
 .twitter-text{
 	color:#ffffff;
+	font-family: 'Fjalla One', sans-serif;
+	font-size:12px;
+}
+
+#scrollable-div{
+	height:15vh;
+	width:10vw;
+	overflow:auto;
 }

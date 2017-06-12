@@ -15,12 +15,14 @@ function onStart()
 	</div>
 </div>
 
-<div class="row">
+<div class="row" style="margin-top:1%; padding-bottom:20px;">
+
+	<div class="col-sm-6">
+		<p>Tour Info and stuff</p>
+	</div>
 	<!--Twitter Feed-->
-	<div class="col-md-4">
+	<div class="col-sm-4">
 		<hr id="tweet-divider">
-		<a class="twitter-text">
-			{% component 'latestTweet' %}
-		</a>
+		{% component 'latestTweet' %}
 	</div>
 </div>
