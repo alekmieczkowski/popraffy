@@ -8,6 +8,7 @@
 	color:#ffffff;
 }
 
+
 .twitter-text{
 	position:relative;
 	color:#ffffff;
@@ -19,7 +20,7 @@
 .favorite-count{
 
 	top:0;
-	margin-left:40px;
+	margin-left:42px;
 	color:white;
 
 	position:absolute;
@@ -27,28 +28,29 @@
 }
 
 .count-fire{
-	z-index:-100;
+
 	position:relative;
 	max-height:60px;
 	margin-left:20px;
 }
 #twitter-widget{
-	z-index:-100px;
+
 	right:0;
 	margin-right:9vw;
 	position:absolute;
 	max-width:300px;
 	height:350px;
+	z-index:1!important;
 }
 
 /*Actual Scrollable div*/
 #scroll-box{
-	position:relative;
+	position:absolute;
 	overflow-y: scroll;
     overflow-x: hidden;
 	height:350px;
 	border:4px;
-	background-attachment:scroll;
+	
 }
 
 
