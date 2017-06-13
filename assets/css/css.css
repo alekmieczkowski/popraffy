@@ -1,11 +1,6 @@
 
 /*Homepage*/
-#menu-2{
- left:0;
- top:0;
- margin-top:50px;
- z-index:-100;
-}
+
 
 .social-link{
   opacity:.6;
@@ -53,11 +48,11 @@
 }
 
 video{
-  position: fixed;
+    position: fixed;
     top: 50%;
     left: 50%;
-    min-width: 100%;
-    min-height: 100%;
+    min-width: 100vw;
+    min-height: 100vh;
     width: auto;
     height: auto;
     z-index: -100;
@@ -66,5 +61,5 @@ video{
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
     background: url({{ 'assets/images/vid-bg-placeholder.tif'|theme }}) no-repeat;
-    background-size: cover; 
+    background-size: 100% 100%; 
 }
