@@ -6,6 +6,8 @@
 	margin-left:200px;
 	margin-top:200px;
 	max-width:400px;
+	max-height:400px;
+	position:relative;
 }
 /*album and wave row*/
 #audio-player{
@@ -18,11 +20,21 @@
 
 /*song name popup*/
 #song-name{
-	opacity:1;
+	opacity:0;
 	background:rgba(255,255,255,.4);
 	border-radius:20px;
 	margin-bottom:10px;
 	height:40px;
+}
+
+#song-name:hover{
+	opacity:1;
+	-webkit-transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -ms-transition: opacity .5s ease-in-out;
+    -o-transition: opacity .5s ease-in-out;
+    transition: opacity .5s ease-in-out;
+}
 }
 
 .fade-in{
@@ -60,4 +72,8 @@
 
 .song-text{
 	font-size:30px;
+}
+
+.hide-div{
+	height:1px;
 }

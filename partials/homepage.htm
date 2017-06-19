@@ -5,6 +5,7 @@
 function onStart()
 {
     $this->addCss('assets/css/twitter_timeline.css');
+    $this->addCss('assets/css/audioVisualizer.css');
 }
 ?>
 ==
@@ -18,13 +19,13 @@ function onStart()
 
 <div class="row" style="margin-top:1%;">
 
-	<div class="col-sm-6">
+	<div class="col-sm-4 col-sm-offset-1 hide-div">
 		{% partial 'audioVisualizer' %}
 	</div>
 
 
 	<!--Twitter Feed-->
-	<div class="col-sm-4" id="twitter-widget">
+	<div class="col-sm-4 col-sm-offset-4" id="twitter-widget">
 		<!--Twitter Header-->
 		<div class="row">
 			<div class="col-sm-4 col-md-2">
