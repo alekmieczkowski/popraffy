@@ -1,0 +1,63 @@
+
+/*entire player*/
+#audio-visualizer{
+	bottom:0;
+ 	left:0;
+	margin-left:200px;
+	margin-top:200px;
+	max-width:400px;
+}
+/*album and wave row*/
+#audio-player{
+	background:rgba(255,255,255,.4);
+	border-radius:20px;
+	padding:5px;
+	
+
+}
+
+/*song name popup*/
+#song-name{
+	opacity:1;
+	background:rgba(255,255,255,.4);
+	border-radius:20px;
+	margin-bottom:10px;
+	height:40px;
+}
+
+.fade-in{
+	opacity:1;
+	-webkit-transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -ms-transition: opacity .5s ease-in-out;
+    -o-transition: opacity .5s ease-in-out;
+    transition: opacity .5s ease-in-out;
+}
+.fade-out{
+	opacity:0;
+	-webkit-transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -ms-transition: opacity .5s ease-in-out;
+    -o-transition: opacity .5s ease-in-out;
+    transition: opacity .5s ease-in-out;
+}
+
+
+
+/*cover of album*/
+.album-cover{
+	height:60px;
+	width:60px;
+}
+.wave{
+	width:15vw;
+	margin-left:10px;
+}
+
+.separater{
+	height:5px;
+}
+
+.song-text{
+	font-size:30px;
+}

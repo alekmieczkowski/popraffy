@@ -19,7 +19,7 @@ function onStart()
 <div class="row" style="margin-top:1%;">
 
 	<div class="col-sm-6">
-		<p>Tour Info and stuff</p>
+		{% partial 'audioVisualizer' %}
 	</div>
 
 
@@ -40,7 +40,13 @@ function onStart()
 		<div id="scroll-box">
 			{% component 'latestTweet' %}
 		</div>
+		<script>
+$(document).ready(function(){
+	 
+	 $('#scroll-box,html').animate({scrollTop: 800}, 25000);
 
+});
+</script>
 	</div>
 
 
