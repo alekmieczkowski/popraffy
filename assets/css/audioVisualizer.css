@@ -1,19 +1,17 @@
 
-/*entire player*/
-#audio-visualizer{
-	bottom:0;
- 	left:0;
-	margin-left:200px;
-	margin-top:200px;
-	max-width:400px;
-	max-height:400px;
-	position:relative;
-}
 /*album and wave row*/
 #audio-player{
+
+
 	background:rgba(255,255,255,.4);
 	border-radius:20px;
 	padding:5px;
+	position:absolute;
+	margin-top:32vh;
+	margin-left:5vw;
+	width:360px;
+	height:60px;
+
 	
 
 }
@@ -27,43 +25,32 @@
 	height:40px;
 }
 
-#song-name:hover{
-	opacity:1;
-	-webkit-transition: opacity .5s ease-in-out;
-    -moz-transition: opacity .5s ease-in-out;
-    -ms-transition: opacity .5s ease-in-out;
-    -o-transition: opacity .5s ease-in-out;
-    transition: opacity .5s ease-in-out;
-}
-}
 
-.fade-in{
-	opacity:1;
-	-webkit-transition: opacity .5s ease-in-out;
-    -moz-transition: opacity .5s ease-in-out;
-    -ms-transition: opacity .5s ease-in-out;
-    -o-transition: opacity .5s ease-in-out;
-    transition: opacity .5s ease-in-out;
-}
-.fade-out{
+/*id for song name in row frame*/
+#song-title{
+	font-family: 'Cuprum', sans-serif;
+	font-size:25px;
+	font-style:bold;
+	color:black;
+	/*before*/
 	opacity:0;
-	-webkit-transition: opacity .5s ease-in-out;
-    -moz-transition: opacity .5s ease-in-out;
-    -ms-transition: opacity .5s ease-in-out;
-    -o-transition: opacity .5s ease-in-out;
-    transition: opacity .5s ease-in-out;
+	margin-left:50px;
 }
-
-
 
 /*cover of album*/
 .album-cover{
+	/*before*/
 	height:60px;
 	width:60px;
+	margin-top:-5px;/*48px;*/
+	margin-left:0px;
 }
 .wave{
 	width:15vw;
 	margin-left:10px;
+
+	/*before*/
+	margin-top: -52px;
 }
 
 .separater{

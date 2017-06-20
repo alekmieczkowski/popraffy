@@ -17,11 +17,3 @@ var wavesurfer = WaveSurfer.create({
 });
 
 wavesurfer.load('themes/popraffy/assets/audio/test.mp3');
-
-var songNameDiv = document.getElementById('song-name');
-
-$('audio-player').on('mouseover', function(){
-    songNameDiv.classList.addClass('fade-in');
-}).on('mouseout', function(){
-    songNameDiv.classList.removeClass('fade-in');
-});

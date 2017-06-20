@@ -1,7 +1,7 @@
 ==
 function onStart()
 {
-    $this->addCss('assets/css/audioVisualizer.css');
+
     $this->addJs('assets/javascript/wavesurfer.js');
     $this->addJs('assets/javascript/audioVisualizer.js');
     
@@ -13,25 +13,83 @@ function onStart()
 
 
 
-<div id="audio-visualizer">
 
-	<!--Song Name popup-->
+	<!--Song Name popup
 	<div id="song-name" class="row">
 		<div class="col-sm-12">
 			<p class="song-text">Title</p>
 		</div>
 	</div>
-
+	
 	<div class="separator"></div>
+	-->
 
-	<div id="audio-player" class="row">
+	<div id="audio-player" class="row audio-player-row">
 		<!--Album Cover-->
 		<div class="col-sm-2 album-div">
 			<img class ="album-cover" src="{{ 'assets/images/test/chremix.jpg' | theme}}"/>
 		</div>
 		<!--audio Visualizer-->
 		<div class="col-sm-4">
-			<div id="waveform" class="wave"> </div>
+			<h4 id="song-title">TITLE</h4>
+			<div id="waveform" class="wave"> 
+			
+			</div>
 		</div>
 	</div>
-</div>
+
+<script>
+
+$('#audio-player').hover(function() {
+
+	//animate in
+
+	//album cover
+	$( ".album-cover" ).animate({
+    	height: 100,
+    	width:100
+    	
+  	},200);
+  	//title
+  	$( "#song-title").animate({
+  		opacity:1
+  	},300);
+  	//wave
+  	$( "#waveform").animate({
+  		marginLeft: 40,
+  		marginTop: -14
+  	},200);
+
+  	//row size
+  	$( "#audio-player").animate({
+  		height:100,
+  		width:430
+  	},200);
+}, function(){
+
+	//animate out
+
+	//album cover
+	$( ".album-cover" ).animate({
+    	height: 60,
+    	width:60
+    	
+  	},300);
+  	//title
+  	$( "#song-title").animate({
+  		opacity:0
+  	},200);
+  	//wave
+  	$( "#waveform").animate({
+  		marginLeft: 0,
+  		marginTop: -52
+  	},300);
+
+  	//row size
+  	$( "#audio-player").animate({
+  		height:60,
+  		width:360
+  	},300);
+
+});
+</script>
