@@ -19,6 +19,32 @@ var wavesurfer = WaveSurfer.create({
 //load song
 wavesurfer.load('themes/popraffy/assets/audio/test.mp3');
 
+//play
+wavesurfer.on('ready', function () {
+    wavesurfer.play();
+});
+
+var count=true;
+//play button click
+$('#play').click(function(){
+    //if music is playing
+    if(count){
+        wavesurfer.pause();
+        count=false;
+
+        //set pause icon
+        document.getElementById('play-pause').src= 'themes/popraffy/assets/images/audio-visualizer/play.png';
+    }
+    else{
+        wavesurfer.play();
+        count=true;
+
+        //set play icon
+        //set pause icon
+        document.getElementById('play-pause').src='themes/popraffy/assets/images/audio-visualizer/pause.png';
+    }
+});
+
 //on hover effect
 $('#audio-player').hover(function() {
 
