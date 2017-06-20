@@ -24,72 +24,37 @@ function onStart()
 	<div class="separator"></div>
 	-->
 
-	<div id="audio-player" class="row audio-player-row">
-		<!--Album Cover-->
-		<div class="col-sm-2 album-div">
-			<img class ="album-cover" src="{{ 'assets/images/test/chremix.jpg' | theme}}"/>
-		</div>
-		<!--audio Visualizer-->
-		<div class="col-sm-4">
-			<h4 id="song-title">TITLE</h4>
-			<div id="waveform" class="wave"> 
-			
+
+		<div id="audio-player" class="row">
+			<!--Album Cover-->
+			<div class="col-sm-2 album-div">
+				<img class ="album-cover" src="{{ 'assets/images/test/chremix.jpg' | theme}}"/>
 			</div>
+			<!--audio Visualizer-->
+			<div class="col-sm-4">
+				<h4 id="song-title">TITLE</h4>
+				<div id="waveform" class="wave"> 
+				
+				</div>
+			</div>
+
+			
+			
 		</div>
-	</div>
+
+		<!--Buttons-->
+		<div class="player-button" id="play">
+			<!--Play pause-->
+			<img  class="player-button-image" src="{{ 'assets/images/audio-visualizer/play.png' | theme}}"/>
+			
+		</div>
+		<div class="player-button center-block" id="like">	
+			<!--download-->
+			<img  class="player-button-image" src="{{ 'assets/images/audio-visualizer/download.png' | theme}}"/>
+		</div>
+
 
 <script>
 
-$('#audio-player').hover(function() {
 
-	//animate in
-
-	//album cover
-	$( ".album-cover" ).animate({
-    	height: 100,
-    	width:100
-    	
-  	},200);
-  	//title
-  	$( "#song-title").animate({
-  		opacity:1
-  	},300);
-  	//wave
-  	$( "#waveform").animate({
-  		marginLeft: 40,
-  		marginTop: -14
-  	},200);
-
-  	//row size
-  	$( "#audio-player").animate({
-  		height:100,
-  		width:430
-  	},200);
-}, function(){
-
-	//animate out
-
-	//album cover
-	$( ".album-cover" ).animate({
-    	height: 60,
-    	width:60
-    	
-  	},300);
-  	//title
-  	$( "#song-title").animate({
-  		opacity:0
-  	},200);
-  	//wave
-  	$( "#waveform").animate({
-  		marginLeft: 0,
-  		marginTop: -52
-  	},300);
-
-  	//row size
-  	$( "#audio-player").animate({
-  		height:60,
-  		width:360
-  	},300);
-
-});
 </script>

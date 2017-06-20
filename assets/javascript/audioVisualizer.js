@@ -16,4 +16,64 @@ var wavesurfer = WaveSurfer.create({
     waveColor: 'rgba(0,0,0,.2);'
 });
 
+//load song
 wavesurfer.load('themes/popraffy/assets/audio/test.mp3');
+
+//on hover effect
+$('#audio-player').hover(function() {
+
+    //animate in
+
+    //album cover
+    $( ".album-cover" ).animate({
+        height: 100,
+        width:100
+        
+    },200);
+    //title
+    $( "#song-title").animate({
+        opacity:1
+    },300);
+    //wave
+    $( "#waveform").animate({
+        marginLeft: 40,
+        marginTop: -14
+    },200);
+
+    //row size
+    $( "#audio-player").animate({
+        height:100,
+        width:430
+    },200);
+}, function(){
+
+    //animate out
+
+    //album cover
+    $( ".album-cover" ).animate({
+        height: 60,
+        width:60
+        
+    },300);
+    //title
+    $( "#song-title").animate({
+        opacity:0
+    },50);
+    //wave
+    $( "#waveform").animate({
+        marginLeft: 0,
+        marginTop: -52
+    },300);
+
+    //row size
+    $( "#audio-player").animate({
+        height:60,
+        width:360
+    },300);
+
+});
+
+//clicking play button
+$('#play').click(function() {
+    
+    

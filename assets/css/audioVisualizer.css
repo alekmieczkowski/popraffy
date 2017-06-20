@@ -7,10 +7,11 @@
 	border-radius:20px;
 	padding:5px;
 	position:absolute;
-	margin-top:32vh;
+	margin-top:26vh;
 	margin-left:5vw;
 	width:360px;
 	height:60px;
+	overflow:hidden;
 
 	
 
@@ -44,6 +45,7 @@
 	width:60px;
 	margin-top:-5px;/*48px;*/
 	margin-left:0px;
+
 }
 .wave{
 	width:15vw;
@@ -63,4 +65,30 @@
 
 .hide-div{
 	height:1px;
+}
+
+.player-button{
+	height:36px;
+	width:36px;
+	background-color:rgba(255,255,255,.4);
+	margin-top:100px;
+	border-radius:4px;
+
+	left: 0;
+	bottom: 0;
+	position: absolute;
+	margin-bottom: -13vw;
+	margin-left: 140px;
+
+}
+
+#like{
+	margin-left: 190px;
+}
+
+.player-button-image{
+	height:30px;
+	width:30px;
+	margin-left:3px;
+	margin-top:2px;
 }
