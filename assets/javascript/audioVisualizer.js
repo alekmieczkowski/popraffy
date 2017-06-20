@@ -74,6 +74,6 @@ $('#audio-player').hover(function() {
 });
 
 //clicking play button
-$('#play').click(function() {
+
     
     
