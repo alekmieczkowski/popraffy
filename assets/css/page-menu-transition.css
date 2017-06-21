@@ -1,0 +1,63 @@
+.menu-2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-top: 30vh;
+    margin-left:30px;
+    max-width:100px;
+}
+
+
+.menu-item-2{
+	height:70px;
+	width:150px;
+	opacity:.6;
+	-webkit-transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -ms-transition: opacity .5s ease-in-out;
+    -o-transition: opacity .5s ease-in-out;
+    transition: opacity .5s ease-in-out;
+
+}
+
+.menu-header{
+	margin-left:37px;
+	height:100px;
+	-webkit-transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -ms-transition: opacity .5s ease-in-out;
+    -o-transition: opacity .5s ease-in-out;
+    transition: opacity .5s ease-in-out;
+}
+
+
+.menu-item-2:hover{
+	opacity:1;
+}
+
+.active{
+	opacity:1;
+}
+
+.shadowfilter {
+	-webkit-filter: drop-shadow(0px 0px 0px rgba(255,255,255,0.80));
+	-webkit-transition: all 0.5s linear;
+	-o-transition: all 0.5s linear;
+	transition: all 0.5s linear;
+	
+}.shadowfilter#my-story:hover {
+	-webkit-filter: drop-shadow(0px 0px 8px rgba(0, 231, 255, 0.8));
+}
+
+.shadowfilter#home-icon:hover {
+	-webkit-filter: drop-shadow(0px 0px 8px rgba(201, 133, 185, 0.8));
+}
+
+.shadowfilter#soundcloud:hover {
+	-webkit-filter: drop-shadow(0px 0px 8px rgba(251, 173, 24, 0.8));
+}
+
+.shadowfilter#store:hover {
+	-webkit-filter: drop-shadow(0px 0px 8px rgba(0, 255, 30, 0.8));
+}
