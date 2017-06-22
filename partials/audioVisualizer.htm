@@ -31,15 +31,25 @@ function onStart()
 		<div class="row" id="player-button-row">
 
 			<!--Buttons-->
+			
+			<!--Play pause-->
 			<div class="col-sm-2" id="player-button">
-				<!--Play pause-->
 				<img  class="player-button-image" id="play-pause" src="{{ 'assets/images/audio-visualizer/pause.png' | theme}}"/>
 				
 			</div>
+
+			<!--download-->
 			<div class="col-sm-2" id="player-button">	
-				<!--download-->
+
 				<img  class="player-button-image" src="{{ 'assets/images/audio-visualizer/download.png' | theme}}"/>
 			</div>
+
+			<!--Soundcloud Logo-->
+			<div class="col-sm-3" >	
+
+				<img  id="soundcloud-logo" class="player-button-image" src="{{ 'assets/images/audio-visualizer/soundcloud.png' | theme}}"/>
+			</div>
+
 		</div>
 
 		<!--Player Row-->
