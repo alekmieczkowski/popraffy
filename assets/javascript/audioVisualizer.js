@@ -26,7 +26,7 @@ wavesurfer.on('ready', function () {
 
 var count=true;
 //play button click
-$('#play').click(function(){
+$('#play-pause').click(function(){
     //if music is playing
     if(count){
         wavesurfer.pause();
