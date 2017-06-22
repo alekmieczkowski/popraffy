@@ -61,15 +61,15 @@ $('#audio-player').hover(function() {
         opacity:1
     },300);
     //wave
-    $( "#waveform").animate({
+    $( ".wave").animate({
         marginLeft: 40,
-        marginTop: -14
+        marginTop: -2
     },200);
 
     //row size
     $( "#audio-player").animate({
         height:100,
-        width:430
+        width:400
     },200);
 }, function(){
 
@@ -86,15 +86,15 @@ $('#audio-player').hover(function() {
         opacity:0
     },50);
     //wave
-    $( "#waveform").animate({
-        marginLeft: 0,
-        marginTop: -52
+    $( ".wave").animate({
+        marginLeft: 10,
+        marginTop: -37
     },300);
 
     //row size
     $( "#audio-player").animate({
         height:60,
-        width:360
+        width:300
     },300);
 
 });

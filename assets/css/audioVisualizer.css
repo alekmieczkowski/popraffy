@@ -1,5 +1,5 @@
 #player-widget{
-	width:420px;
+	width:360px;
 	margin-top:20vh;
 	
 }
@@ -12,7 +12,8 @@
 	background:rgba(255,255,255,.4);
 	border-radius:10px;
 	padding:5px;
-	width:360px;
+	height:60px;
+	width:300px;
 
 	/*
 	position:absolute;
@@ -42,7 +43,8 @@
 	/*before*/
 	opacity:0;
 	margin-left:50px;
-	margin-bottom:10px;
+	margin-bottom:6px;
+	margin-top:-2px;
 }
 
 /*cover of album*/
@@ -56,17 +58,14 @@
 
 }
 .wave{
-	position:absolute;
+	position:relative;
 	width:200px;
 	margin-left:10px;
 
 	/*before*/
-	margin-top: -52px;
+	margin-top: -37px;
 }
 
-.song-text{
-	font-size:30px;
-}
 
 .hide-div{
 	height:1px;
@@ -108,6 +107,10 @@
 	margin-top:100px;
 }
 
+
+#title-wavebar-div{
+	height:5px;
+}
 
 /* soundcloud logo*/
 
